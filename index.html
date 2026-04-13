@@ -382,20 +382,29 @@ footer::before{
 .fc a:hover{color:rgba(255,255,255,.92);}
 .social-media__item,.tap-area{
   display:inline-flex;align-items:center;justify-content:center;
-  width:46px;height:46px;border-radius:999px;
-  background:rgba(255,255,255,.06);
-  border:1px solid rgba(255,255,255,.12);
-  box-shadow:0 10px 26px rgba(0,0,0,.22);
-  transition:transform .25s var(--ease),background .25s var(--ease),border-color .25s var(--ease),box-shadow .25s var(--ease);
+  width:48px;height:44px;
+  border-radius:14px; /* modern “squircle-ish” pill, not a circle */
+  border:1px solid rgba(255,255,255,.14);
+  box-shadow:0 12px 30px rgba(0,0,0,.22);
+  transition:transform .25s var(--ease),filter .25s var(--ease),box-shadow .25s var(--ease),border-color .25s var(--ease);
+  color:#fff;
 }
 .tap-area{margin-left:.55rem;}
 .social-media__item:hover,.tap-area:hover{
   transform:translateY(-2px);
-  background:rgba(255,255,255,.10);
-  border-color:rgba(212,170,74,.28);
-  box-shadow:0 14px 34px rgba(0,0,0,.26);
+  filter:brightness(1.10) saturate(1.08); /* lighter on hover */
+  border-color:rgba(255,255,255,.22);
+  box-shadow:0 16px 40px rgba(0,0,0,.26);
 }
 .social-media__item:active,.tap-area:active{transform:translateY(-1px);}
+
+/* Official brand colors (default) */
+.social-media__item.branding-colors--instagram{
+  background:radial-gradient(circle at 30% 110%, #fdf497 0%, #fdf497 8%, #fd5949 38%, #d6249f 62%, #285AEB 92%);
+}
+.tap-area[aria-label*="Facebook"]{background:#1877F2;}
+.social-media__item.branding-colors--instagram svg,
+.tap-area[aria-label*="Facebook"] svg{filter:drop-shadow(0 8px 18px rgba(0,0,0,.18));}
 .fb{display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:1rem;}
 .fcp{font-size:.69rem;color:rgba(255,255,255,.70);}
 .fbdg{
