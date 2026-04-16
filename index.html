@@ -226,7 +226,7 @@ nav.scrolled .nlogo img{transform:translateY(-1px) scale(.98);filter:drop-shadow
 @keyframes tick{from{transform:translateX(0)}to{transform:translateX(-50%)}}
 /* STATS */
 .stats{display:grid;grid-template-columns:repeat(4,1fr);border-top:1px solid var(--bs);border-bottom:1px solid var(--bs);}
-.sbox{padding:2.8rem 2rem;text-align:center;border-right:1px solid var(--bs);position:relative;transition:background .3s;}
+.sbox{padding:1.8rem 1.5rem;text-align:center;border-right:1px solid var(--bs);position:relative;transition:background .3s;}
 .sbox::after{content:'';position:absolute;bottom:0;left:50%;transform:translateX(-50%);width:0;height:2px;background:var(--gold);transition:width .4s;}
 .sbox:hover{background:var(--cream);}.sbox:hover::after{width:56%;}
 .sbox:last-child{border-right:none;}
@@ -234,10 +234,10 @@ nav.scrolled .nlogo img{transform:translateY(-1px) scale(.98);filter:drop-shadow
 .slbl{font-size:.7rem;letter-spacing:.07em;color:var(--stone);line-height:1.5;}
 /* LAYOUT */
 .wrap{max-width:1280px;margin:0 auto;padding:0 5vw;}
-.sec{padding:4rem 0;position:relative;z-index:1;}
+.sec{padding:2.5rem 0;position:relative;z-index:1;scroll-margin-top:80px;}
 .sw{background:var(--ivory);border-top:1px solid var(--line);border-bottom:1px solid var(--line);}
 .sp{background:var(--ivory);border-top:1px solid var(--line);border-bottom:1px solid var(--line);}
-.ey{display:flex;align-items:center;gap:.7rem;margin-bottom:1rem;}
+.ey{display:flex;align-items:center;gap:.7rem;margin-bottom:.6rem;}
 .eyb{width:22px;height:1px;background:var(--gold);flex-shrink:0;}
 .eyt{font-size:.6rem;letter-spacing:.28em;text-transform:uppercase;color:var(--gold);font-weight:600;}
 .ec{justify-content:center;}
@@ -245,7 +245,7 @@ nav.scrolled .nlogo img{transform:translateY(-1px) scale(.98);filter:drop-shadow
 .h2 em{font-style:italic;color:var(--gold);}
 .bc{font-size:.94rem;color:var(--stone);line-height:1.9;}
 /* ABOUT */
-.ag{display:grid;grid-template-columns:5fr 7fr;gap:6rem;align-items:center;}
+.ag{display:grid;grid-template-columns:5fr 7fr;gap:3.5rem;align-items:center;}
 .afr{position:relative;}
 .afr::before{content:'';position:absolute;top:-14px;left:-14px;right:14px;bottom:14px;border:1px solid var(--border);pointer-events:none;z-index:0;}
 .aimg{width:100%;aspect-ratio:1;object-fit:cover;object-position:center 70%;position:relative;z-index:1;box-shadow:0 16px 48px var(--sh);}
@@ -255,10 +255,10 @@ nav.scrolled .nlogo img{transform:translateY(-1px) scale(.98);filter:drop-shadow
 .cred{display:flex;align-items:center;gap:.8rem;font-size:.84rem;color:var(--char);}
 .cp{width:5px;height:5px;background:var(--gold);flex-shrink:0;}
 /* BENEFITS */
-.bhd{text-align:center;margin-bottom:3.5rem;}
-.bhd .bc{max-width:480px;margin:1rem auto 0;}
+.bhd{text-align:center;margin-bottom:1.8rem;}
+.bhd .bc{max-width:480px;margin:.5rem auto 0;}
 .bgrid{display:grid;grid-template-columns:repeat(3,1fr);}
-.bcard{padding:2.4rem 2rem;border:1px solid var(--line);margin:-1px 0 0 -1px;background:var(--surface2);transition:transform .35s var(--ease),background .3s var(--ease),box-shadow .35s var(--ease);position:relative;overflow:hidden;}
+.bcard{padding:1.6rem 1.6rem;border:1px solid var(--line);margin:-1px 0 0 -1px;background:var(--surface2);transition:transform .35s var(--ease),background .3s var(--ease),box-shadow .35s var(--ease);position:relative;overflow:hidden;}
 .bcard::after{content:'';position:absolute;inset:-1px;background:radial-gradient(500px 240px at var(--mx,50%) var(--my,30%), rgba(212,170,74,.18), transparent 55%);opacity:0;transition:opacity .35s var(--ease);pointer-events:none;}
 .bcard::before{content:'';position:absolute;top:0;left:0;right:0;height:2px;background:var(--gold);transform:scaleX(0);transform-origin:left;transition:transform .4s;}
 .bcard:hover{background:rgba(255,255,255,.92);box-shadow:var(--shadow2);transform:translateY(-4px);z-index:1;}.bcard:hover::before{transform:scaleX(1);}
@@ -267,22 +267,22 @@ nav.scrolled .nlogo img{transform:translateY(-1px) scale(.98);filter:drop-shadow
 .bt{font-family:'Cormorant Garamond',serif;font-size:1.18rem;font-weight:600;color:var(--char);margin-bottom:.55rem;}
 .bb{font-size:.82rem;color:var(--stone);line-height:1.8;}
 /* PRODUCTS */
-.phd{text-align:center;margin-bottom:3.5rem;}
-.phd .bc{max-width:520px;margin:1rem auto 0;}
+.phd{text-align:center;margin-bottom:1.8rem;}
+.phd .bc{max-width:520px;margin:.5rem auto 0;}
 .pgrid{display:grid;grid-template-columns:repeat(2,1fr);gap:2rem;}
-.pcard{background:var(--surface2);border:1px solid var(--line);overflow:hidden;transition:transform .35s var(--ease),box-shadow .35s var(--ease),border-color .35s var(--ease);border-radius:var(--r-lg);}
+.pcard{background:var(--surface2);border:1px solid var(--line);overflow:hidden;transition:transform .35s var(--ease),box-shadow .35s var(--ease),border-color .35s var(--ease);border-radius:var(--r-lg);display:flex;flex-direction:column;position:relative;}
 .pcard::after{content:'';position:absolute;inset:-1px;background:radial-gradient(520px 260px at var(--mx,50%) var(--my,30%), rgba(103,209,255,.14), transparent 60%);opacity:0;transition:opacity .35s var(--ease);pointer-events:none;}
 .pcard:hover{transform:translateY(-6px);box-shadow:var(--shadow);border-color:rgba(184,146,42,.22);}
 .pcard:hover::after{opacity:1;}
 .piw{overflow:hidden;aspect-ratio:1;position:relative;background:#fff;}
 .pimg{width:100%;height:100%;object-fit:cover;object-position:center 55%;transition:transform .5s;}
 .pimg[src="candle_image.jpg"]{object-position:center 58%;}
-.pimg[alt="Mindful Executive wellness gift set with leather journal"]{object-fit:contain;object-position:center;padding:10px;background:#fff;}
+.pimg[alt="Mindful Executive wellness gift set with leather journal"]{object-fit:cover;object-position:center 55%;}
 .pcard:hover .pimg{transform:scale(1.04);}
 .ptag{position:absolute;top:1rem;left:1rem;background:var(--white);border:1px solid var(--border);font-size:.58rem;letter-spacing:.18em;text-transform:uppercase;color:var(--gold);font-weight:600;padding:.28rem .75rem;}
 .sthumb{position:absolute;bottom:.8rem;right:.8rem;width:82px;height:82px;background:var(--white);border:2px solid var(--bs);overflow:hidden;box-shadow:0 4px 16px var(--sh);}
 .sthumb img{width:100%;height:100%;object-fit:contain;padding:4px;}
-.pb{padding:1.8rem;}
+.pb{padding:1.2rem 1.4rem;flex:1;display:flex;flex-direction:column;}
 .ptit{font-family:'Cormorant Garamond',serif;font-size:1.35rem;font-weight:600;color:var(--char);margin-bottom:.4rem;}
 .psub{font-size:.78rem;color:var(--stone);font-style:italic;margin-bottom:.9rem;}
 .pdesc{font-size:.82rem;color:var(--stone);line-height:1.75;margin-bottom:1.1rem;}
@@ -290,14 +290,14 @@ nav.scrolled .nlogo img{transform:translateY(-1px) scale(.98);filter:drop-shadow
 .pitems{display:flex;flex-direction:column;gap:.32rem;margin-bottom:1.4rem;}
 .pi{display:flex;align-items:flex-start;gap:.55rem;font-size:.8rem;color:var(--char);}
 .pi::before{content:"✓";color:var(--gold);font-size:.68rem;flex-shrink:0;margin-top:.1rem;}
-.pp{display:flex;align-items:baseline;gap:.45rem;padding-top:1.1rem;border-top:1px solid var(--bs);}
+.pp{display:flex;align-items:baseline;gap:.45rem;padding-top:1.1rem;border-top:1px solid var(--bs);margin-top:auto;}
 .pfr{font-size:.63rem;letter-spacing:.1em;text-transform:uppercase;color:var(--stone);}
 .ppr{font-family:'Cormorant Garamond',serif;font-size:1.75rem;font-weight:600;color:var(--gold);line-height:1;}
 .pno{font-size:.7rem;color:var(--stone);}
 /* TIERS */
-.thd{text-align:center;margin-bottom:1.5rem;}
-.thd .bc{max-width:540px;margin:1rem auto 0;}
-.tnote{text-align:center;margin-bottom:3rem;font-size:.74rem;color:var(--stone);display:flex;align-items:center;justify-content:center;gap:.7rem;}
+.thd{text-align:center;margin-bottom:1rem;}
+.thd .bc{max-width:540px;margin:.5rem auto 0;}
+.tnote{text-align:center;margin-bottom:1.5rem;font-size:.74rem;color:var(--stone);display:flex;align-items:center;justify-content:center;gap:.7rem;}
 .tnote span{color:var(--gold);}
 .tgrid{display:grid;grid-template-columns:repeat(3,1fr);gap:1.5rem;}
 .tier{background:var(--surface2);border:1px solid var(--line);display:flex;flex-direction:column;transition:transform .35s var(--ease),box-shadow .35s var(--ease),border-color .35s var(--ease);position:relative;overflow:hidden;border-radius:var(--r-lg);}
@@ -339,9 +339,9 @@ nav.scrolled .nlogo img{transform:translateY(-1px) scale(.98);filter:drop-shadow
 .acn{color:var(--char);font-weight:500;}
 .acp{font-family:'Cormorant Garamond',serif;font-size:1.1rem;font-weight:600;color:var(--gold);}
 /* SCIENCE */
-.scg{display:grid;grid-template-columns:1fr 1fr;gap:6rem;align-items:start;}
+.scg{display:grid;grid-template-columns:1fr 1fr;gap:3.5rem;align-items:start;}
 .scst{display:flex;flex-direction:column;}
-.scst2{display:grid;grid-template-columns:44px 1fr;gap:1.5rem;padding:1.8rem 0;border-bottom:1px solid var(--bs);}
+.scst2{display:grid;grid-template-columns:44px 1fr;gap:1.2rem;padding:1.2rem 0;border-bottom:1px solid var(--bs);}
 .scst2:last-child{border-bottom:none;}
 .scn{font-family:'Cormorant Garamond',serif;font-size:2.1rem;font-weight:600;color:rgba(184,146,42,.22);line-height:1;}
 .sct{font-family:'Cormorant Garamond',serif;font-size:1.05rem;font-weight:600;color:var(--char);margin-bottom:.35rem;}
@@ -354,19 +354,19 @@ nav.scrolled .nlogo img{transform:translateY(-1px) scale(.98);filter:drop-shadow
 .on{font-size:.84rem;font-weight:600;color:var(--char);margin-bottom:.15rem;}
 .of{font-size:.74rem;color:var(--stone);}
 /* PROCESS */
-.prl{display:grid;grid-template-columns:repeat(4,1fr);margin-top:4rem;border:1px solid var(--bs);background:var(--white);}
-.pst{padding:2.5rem 2rem;border-right:1px solid var(--bs);transition:background .3s;}
+.prl{display:grid;grid-template-columns:repeat(4,1fr);margin-top:2rem;border:1px solid var(--bs);background:var(--white);}
+.pst{padding:1.8rem 1.6rem;border-right:1px solid var(--bs);transition:background .3s;}
 .pst:last-child{border-right:none;}.pst:hover{background:var(--ivory);}
 .psn{font-family:'Cormorant Garamond',serif;font-size:3.6rem;font-weight:600;color:rgba(184,146,42,.13);line-height:1;margin-bottom:.8rem;}
 .psti{font-family:'Cormorant Garamond',serif;font-size:1.1rem;font-weight:600;color:var(--char);margin-bottom:.5rem;}
 .psb{font-size:.8rem;color:var(--stone);line-height:1.8;}
 /* QUOTE */
-.qs{background:var(--char);padding:6rem 5vw;text-align:center;position:relative;overflow:hidden;}
+.qs{background:var(--char);padding:3.5rem 5vw;text-align:center;position:relative;overflow:hidden;}
 .qs::before{content:'\201C';font-family:'Cormorant Garamond',serif;position:absolute;top:-2rem;left:50%;transform:translateX(-50%);font-size:18rem;font-weight:700;color:rgba(184,146,42,.07);line-height:1;pointer-events:none;}
 .qt{font-family:'Cormorant Garamond',serif;font-size:clamp(1.4rem,3vw,2.2rem);font-weight:300;font-style:italic;color:rgba(255,255,255,.88);max-width:820px;margin:0 auto 1.5rem;line-height:1.5;position:relative;z-index:1;}
 .qa{font-size:.67rem;letter-spacing:.18em;text-transform:uppercase;color:var(--gold-lt);}
 /* BOOK */
-.bk{padding:3rem 5vw;text-align:center;background:linear-gradient(160deg,var(--cream) 0%,var(--parch) 100%);position:relative;overflow:hidden;}
+.bk{padding:2.5rem 5vw;text-align:center;background:linear-gradient(160deg,var(--cream) 0%,var(--parch) 100%);position:relative;overflow:hidden;}
 .bk::before{content:'';position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);width:680px;height:400px;background:radial-gradient(ellipse,rgba(184,146,42,.09) 0%,transparent 65%);pointer-events:none;}
 .bkin{max-width:640px;margin:0 auto;position:relative;z-index:1;}
 .bkh{font-family:'Cormorant Garamond',serif;font-size:clamp(1.8rem,4.2vw,3.2rem);font-weight:300;color:var(--char);line-height:1.1;margin-bottom:1.1rem;}
@@ -477,8 +477,8 @@ footer::before{content:'';position:absolute;inset:0;pointer-events:none;backgrou
 @media(max-width:1024px){.hgrid{grid-template-columns:1fr;}.hvis{display:none;}.ag{grid-template-columns:1fr;gap:3rem;}.scg{grid-template-columns:1fr;gap:3rem;}.op{position:static;}.tgrid{grid-template-columns:1fr;max-width:480px;margin:0 auto;}.pgrid{grid-template-columns:1fr;}.ft{grid-template-columns:1fr 1fr;gap:2.5rem;}}
 @media(max-width:768px){nav{padding:1rem 5vw;}.nlinks{display:none;}.stats{grid-template-columns:repeat(2,1fr);}.bgrid{grid-template-columns:1fr;}.prl{grid-template-columns:1fr;}.pst{border-right:none;border-bottom:1px solid var(--bs);}.pst:last-child{border-bottom:none;}.atblh,.arow{grid-template-columns:1fr 1fr;}.ahc:last-child,.ac:last-child{display:none;}.ft{grid-template-columns:1fr;gap:2rem;}}
 /* CORRECTIONS */
-.corr-intro{text-align:center;margin-bottom:3rem;}
-.corr-intro .bc{max-width:600px;margin:1rem auto 0;}
+.corr-intro{text-align:center;margin-bottom:1.8rem;}
+.corr-intro .bc{max-width:600px;margin:.5rem auto 0;}
 .corr-context{background:rgba(184,146,42,.07);border:1px solid var(--border);padding:1.1rem 1.5rem;margin-bottom:3rem;display:flex;align-items:flex-start;gap:.9rem;font-size:.81rem;color:var(--stone);line-height:1.75;}
 .corr-cico{font-size:1.1rem;flex-shrink:0;margin-top:.1rem;}
 .corr-context strong{color:var(--char);font-weight:600;}
@@ -646,8 +646,8 @@ footer::before{content:'';position:absolute;inset:0;pointer-events:none;backgrou
       </div>
     </div>
     <div class="hvis">
-      <img src="gift_image.png" alt="Premium executive wellness gift set" class="hmain">
-      <img src="your-float-image.jpg" alt="Healthcare wellness gift set" class="hfloat">
+      <img src="1.png" alt="Premium executive wellness gift set" class="hmain">
+      <img src="your-float-image.png" alt="Healthcare wellness gift set" class="hfloat">
     </div>
   
   </div>
@@ -732,7 +732,7 @@ footer::before{content:'';position:absolute;inset:0;pointer-events:none;backgrou
       <!-- Healthcare -->
       <div class="pcard">
         <div class="piw">
-          <img src="health_care_2.jpg" alt="Healthcare hero wellness gift set" class="pimg">
+          <img src="health_care_2.png" alt="Healthcare hero wellness gift set" class="pimg">
           <span class="ptag">Healthcare</span>
         </div>
         <div class="pb">
@@ -1063,7 +1063,7 @@ footer::before{content:'';position:absolute;inset:0;pointer-events:none;backgrou
 <!-- SCIENCE -->
 <section class="sec" id="science">
   <div class="wrap">
-    <div class="corr-intro rv in" style="margin-bottom:3.5rem;">
+    <div class="corr-intro rv in">
       <div class="ey ec"><span class="eyeb"></span><span class="eyt">The Science</span><span class="eyeb"></span></div>
       <h2 class="h2">How Scent <em>Rewires</em> The Workplace Brain</h2>
     </div>
@@ -1308,27 +1308,18 @@ function replaceHorizontalGiftImage(){
   if(!img) return;
   img.loading='lazy';
   img.decoding='async';
-  img.src='horizontal_gift_image.png';
-  img.style.objectFit='contain';
-  img.style.objectPosition='center';
-  img.style.padding='10px';
-  img.style.background='#fff';
+  img.src='gift_image.png';
+  img.removeAttribute('style');
 
-  // Also replace its small thumbnail for consistency
   const piw=img.closest('.piw');
-  if(piw){
-    piw.style.background='#fff';
-  }
+  if(piw) piw.removeAttribute('style');
 
   const thumb=piw?.querySelector('.sthumb img');
   if(thumb){
     thumb.loading='lazy';
     thumb.decoding='async';
-    thumb.src='horizontal_gift_image.png';
-    thumb.style.objectFit='contain';
-    thumb.style.objectPosition='center';
-    thumb.style.padding='4px';
-    thumb.style.background='#fff';
+    thumb.src='gift_image.png';
+    thumb.removeAttribute('style');
   }
 }
 replaceHorizontalGiftImage();
@@ -1338,26 +1329,24 @@ function replaceThreeSetImage(){
   if(!img) return;
   img.loading='lazy';
   img.decoding='async';
-  img.src='three_set_images.png';
-  img.style.objectFit='cover';
-  img.style.objectPosition='center';
+  img.src='healthcare.png';
+  img.removeAttribute('style');
 
   const piw=img.closest('.piw');
-  if(piw) piw.style.background='#fff';
+  if(piw) piw.removeAttribute('style');
 
   const thumb=piw?.querySelector('.sthumb img');
   if(thumb){
     thumb.loading='lazy';
     thumb.decoding='async';
-    thumb.src='three_set_images.png';
-    thumb.style.objectFit='cover';
-    thumb.style.objectPosition='center';
+    thumb.src='healthcare.png';
+    thumb.removeAttribute('style');
   }
 }
 replaceThreeSetImage();
 
 function replaceCandleImages(){
-  const targetSrc='candle_image.jpg';
+  const targetSrc='candle_image.png';
   const candidates=[
     ...document.querySelectorAll('img.aimg[alt*="Bergamot"][alt*="Vetiver"]'),
     ...document.querySelectorAll('img.pimg[alt*="Bergamot"][alt*="Vetiver"]')
