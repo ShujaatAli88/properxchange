@@ -185,7 +185,7 @@ nav.scrolled .nlogo img{transform:translateY(-1px) scale(.98);filter:drop-shadow
   left:auto;
   width:42%;
   aspect-ratio:1;
-  background:#fff url('gift_image.png') 50% 48%/cover no-repeat;
+  background:#fff url('1.png') 50% 48%/cover no-repeat;
   border-radius:var(--r-lg);
   border:4px solid rgba(255,255,255,.9);
   box-shadow:var(--shadow2);
@@ -234,7 +234,7 @@ nav.scrolled .nlogo img{transform:translateY(-1px) scale(.98);filter:drop-shadow
 .slbl{font-size:.7rem;letter-spacing:.07em;color:var(--stone);line-height:1.5;}
 /* LAYOUT */
 .wrap{max-width:1280px;margin:0 auto;padding:0 5vw;}
-.sec{padding:2.5rem 0;position:relative;z-index:1;scroll-margin-top:80px;}
+.sec{padding:2.5rem 0;position:relative;z-index:1;scroll-margin-top:30px;}
 .sw{background:var(--ivory);border-top:1px solid var(--line);border-bottom:1px solid var(--line);}
 .sp{background:var(--ivory);border-top:1px solid var(--line);border-bottom:1px solid var(--line);}
 .ey{display:flex;align-items:center;gap:.7rem;margin-bottom:.6rem;}
@@ -680,7 +680,7 @@ footer::before{content:'';position:absolute;inset:0;pointer-events:none;backgrou
         </div>
       </div>
       <div class="rv d2">
-        <div class="ey"><span class="eyb"></span><span class="eyt">About Proper Xchange</span></div>
+        <div class="ey"><span class="eyb"></span><span class="eyt">About Proper Xchange</span><span class="eyb"></span></div>
         <h2 class="h2" style="margin-bottom:1.2rem;">Wellness Is Not a<br>Perk. It's a <em>Strategy.</em></h2>
         <p class="bc" style="margin-bottom:1.1rem;">Proper Xchange is a woman-owned aromatherapy and wellness sensory experience based in Los Angeles, founded by Certified Professional Aromatherapist Debbie Sherria Pullens. We design science-backed scent wellness experiences for corporate environments helping HR leaders build workplaces where employees genuinely thrive.</p>
         <p class="bc">Every program and product is custom-designed for your space, team size and culture goals backed by deep expertise in how the olfactory system directly influences mood, stress hormones and cognitive performance.</p>
@@ -929,7 +929,7 @@ footer::before{content:'';position:absolute;inset:0;pointer-events:none;backgrou
 <section class="sec sw" id="corrections">
   <div class="wrap">
     <div class="corr-intro rv">
-      <div class="ey ec"><span class="eyeb"></span><span class="eyt">Correctional Wellness Programs</span><span class="eyeb"></span></div>
+      <div class="ey ec"><span class="eyb"></span><span class="eyt">Correctional Wellness Programs</span><span class="eyb"></span></div>
       <h2 class="h2" style="margin-bottom:.8rem;">Wellness That Works <em>Behind The Walls</em></h2>
       <p class="bc">Proper Xchange brings certified aromatherapy and sound wellness into correctional environments supporting the people who work there and the individuals working toward a better future. Grounded in Debbie's leadership of Reaching Beyond Bars, these programs are designed with security, compliance and human dignity at the center.</p>
     </div>
@@ -1064,7 +1064,7 @@ footer::before{content:'';position:absolute;inset:0;pointer-events:none;backgrou
 <section class="sec" id="science">
   <div class="wrap">
     <div class="corr-intro rv in">
-      <div class="ey ec"><span class="eyeb"></span><span class="eyt">The Science</span><span class="eyeb"></span></div>
+      <div class="ey ec"><span class="eyb"></span><span class="eyt">The Science</span><span class="eyb"></span></div>
       <h2 class="h2">How Scent <em>Rewires</em> The Workplace Brain</h2>
     </div>
     <div class="scg">
@@ -1308,7 +1308,7 @@ function replaceHorizontalGiftImage(){
   if(!img) return;
   img.loading='lazy';
   img.decoding='async';
-  img.src='gift_image.png';
+  img.src='1.png';
   img.removeAttribute('style');
 
   const piw=img.closest('.piw');
@@ -1318,7 +1318,7 @@ function replaceHorizontalGiftImage(){
   if(thumb){
     thumb.loading='lazy';
     thumb.decoding='async';
-    thumb.src='gift_image.png';
+    thumb.src='1.png';
     thumb.removeAttribute('style');
   }
 }
