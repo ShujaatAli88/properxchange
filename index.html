@@ -1402,8 +1402,24 @@ function setActiveLink(id){
   navLinks.forEach(a=>a.classList.toggle('active',a.getAttribute('href')==='#'+id));
 }
 
+// Block scroll-spy from overriding the clicked link until scroll settles
+let spyLocked=false;
+let spyLockTimer=null;
+
+navLinks.forEach(a=>{
+  a.addEventListener('click',()=>{
+    const id=(a.getAttribute('href')||'').slice(1);
+    if(!id) return;
+    setActiveLink(id);
+    spyLocked=true;
+    clearTimeout(spyLockTimer);
+    spyLockTimer=setTimeout(()=>{ spyLocked=false; },1200);
+  });
+});
+
 if(sections.length){
   const spy=new IntersectionObserver((entries)=>{
+    if(spyLocked) return;
     const visible=entries
       .filter(e=>e.isIntersecting)
       .sort((a,b)=>b.intersectionRatio-a.intersectionRatio)[0];
